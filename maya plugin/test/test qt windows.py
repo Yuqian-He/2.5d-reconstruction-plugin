@@ -4,6 +4,8 @@ import maya.OpenMayaUI as omui
 from shiboken2 import wrapInstance
 from PySide2 import QtWidgets,QtGui,QtCore
 from PySide2.QtCore import Qt
+from PySide2.QtWidgets import QDialog,QProgressDialog,QApplication, QMainWindow, QTextEdit, QVBoxLayout, QWidget
+
 
 path = cmds.internalVar(userAppDir=True)
 
@@ -62,6 +64,7 @@ class ImageGenerator(QtWidgets.QDialog):
         self.generate_image.clicked.connect(self.generate_image_fuc)
     
     def generate_image_fuc(self):
+        self.process_window()
         input_layer=self.spin_box.value()
         print(input_layer)
     
@@ -101,25 +104,28 @@ class ImageGenerator(QtWidgets.QDialog):
             for obj in selected_objects:
                 cmds.addAttr(obj, longName="customInt", attributeType="long", defaultValue=value, keyable=True)
 
+    def process_window(self):
+        subwindow = SubWindow()
+        self.timer = QtCore.QTimer()
+        self.timer.timeout.connect(subwindow.set_output("output"))
+        self.timer.start(500)
+        subwindow.show()
 
-# def generate_mesh(self):
-#     input_path=self.path
-#     ai_thread=AiThread(input_path)
-#     ai_thread.run_ai()
-#     ai_thread.showMesh()
-#     self.close()
+class SubWindow(QDialog):
+    def __init__(self,parent=get_mainwindow()):
+        super().__init__(parent)
 
-# def process_window(self):
-#     setValue=100000
-#     self.progress_dialog = QProgressDialog("Generating Mesh...", "Cancel", 0, 100, self)
-#     self.progress_dialog.setWindowModality(Qt.WindowModal)
-#     self.progress_dialog.setAutoClose(True)
-#     self.progress_dialog.setAutoReset(True)
-#     self.progress_dialog.setValue(0)
-#     self.progress_dialog.show()
+        self.setWindowTitle("Subwindow")
+        self.resize(180,100)
 
-#     for i in range(setValue):
-#         self.progress_dialog.setValue(i/1000)
+        layout = QVBoxLayout()
+        self.setLayout(layout)
+        self.text_edit = QtWidgets.QLabel()
+        layout.addWidget(self.text_edit)
+
+    def set_output(self, output):
+        self.text_edit.setText(output)
+
 
 
 
