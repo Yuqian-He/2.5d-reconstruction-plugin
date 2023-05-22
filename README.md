@@ -6,6 +6,6 @@ With the development of Computer Graphics technology as well as deep learning te
 This project aimed to develop a plugin that utilizes a [2.5D reconstruction method based on monocular camera](https://github.com/XChengCode/Synthesis-of-2.5D-Models-Based-on-Monocular-Images/tree/main). The purpose of this plugin was to integrate this algorithm seamlessly into DCC tools such as Maya and Unreal Engine, thereby enhancing convenience for users interested in employing this technique. Furthermore, the integration of the plugin into the production pipeline of companies was intended to facilitate the embedding of this algorithm and streamline the workflow within their respective pipelines.
 
 ## Result
-![](./result.mp4)
+<video src='https://youtu.be/RNKzpYd654A' width=180/>
 
 ## Build
