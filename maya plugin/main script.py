@@ -3,7 +3,7 @@ import maya.cmds as cmds
 import maya.OpenMayaUI as omui
 from shiboken2 import wrapInstance
 from PySide2 import QtWidgets,QtGui,QtCore
-from PySide2.QtCore import Qt
+from PySide2.QtCore import Qt,QThread
 
 
 path = cmds.internalVar(userAppDir=True)
