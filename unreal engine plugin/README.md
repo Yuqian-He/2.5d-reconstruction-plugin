@@ -2,8 +2,8 @@
 
 ## Build
 - Create a new folder "Plugins" in your Unreal project folder (I use Unreal Engine 5.2)
-- Download [reconstruction_25d](https://github.com/Yuqian-He/2.5d-reconstruction-plugin/tree/main/unreal%20engine%20plugin/reconstruction_25d) and place it in /Plugins/
-- Download [2.5d_algorithm](https://drive.google.com/file/d/1xSHlncvL8jvMD2RM6ItLjBiiy1Kcm3iv/view?usp=share_link) and [2.5d_ENV](https://drive.google.com/file/d/1H_GY_U3Ue_1e3QYvhES8yE28R1CrQOL0/view?usp=share_link) and place them in /Plugins/reconstruction_25d/
+- Download [reconstruction_25d](https://github.com/Yuqian-He/2.5d-reconstruction-plugin/tree/main/unreal%20engine%20plugin/reconstruction_25d) and place it in */Plugins/*
+- Download [2.5d_algorithm](https://drive.google.com/file/d/1xSHlncvL8jvMD2RM6ItLjBiiy1Kcm3iv/view?usp=share_link) and [2.5d_ENV](https://drive.google.com/file/d/1H_GY_U3Ue_1e3QYvhES8yE28R1CrQOL0/view?usp=share_link) and place them in */Plugins/reconstruction_25d/*
     - [2.5D Models Based on Monocular Images](https://github.com/XChengCode/Synthesis-of-2.5D-Models-Based-on-Monocular-Images/tree/main): This is the AI model I used in this project. 
     - [Virtual env](https://drive.google.com/file/d/1H_GY_U3Ue_1e3QYvhES8yE28R1CrQOL0/view?usp=share_link): This virual env was created based on which can run the ai model. You can download my virtual env as I installed everything already. As for people try to build by themselves, here is the steps:
     - ``` c
