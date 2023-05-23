@@ -10,4 +10,6 @@ This project aimed to develop a plugin that utilizes a [2.5D reconstruction meth
 ![](./result/maya%20plugin.jpg)
 
 ## Build
+- [Maya build](https://github.com/Yuqian-He/2.5d-reconstruction-plugin/tree/main/maya%20plugin)
+- [Unreal Engine build](https://github.com/Yuqian-He/2.5d-reconstruction-plugin/tree/main/unreal%20engine%20plugin)
 
