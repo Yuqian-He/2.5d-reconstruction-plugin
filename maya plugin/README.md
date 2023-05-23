@@ -3,9 +3,9 @@
 ## Build
 [main script](https://github.com/Yuqian-He/2.5d-reconstruction-plugin/blob/main/maya%20plugin/main%20script.py): This is the script runing on maya scripts editor.
 
-[2.5D Models Based on Monocular Images](https://github.com/XChengCode/Synthesis-of-2.5D-Models-Based-on-Monocular-Images/tree/main): This is the AI model I used in this project. You can also download it [here]()
+[2.5D Models Based on Monocular Images](https://github.com/XChengCode/Synthesis-of-2.5D-Models-Based-on-Monocular-Images/tree/main): This is the AI model I used in this project. You can also download it [here](https://drive.google.com/file/d/1xSHlncvL8jvMD2RM6ItLjBiiy1Kcm3iv/view?usp=share_link)
 
-[Virtual env](): This virual env was created based on which can run the ai model. You can download my virtual env as I installed everything already. As for people try to build by themselves, here is the steps:
+[Virtual env](https://drive.google.com/file/d/1H_GY_U3Ue_1e3QYvhES8yE28R1CrQOL0/view?usp=share_link): This virual env was created based on which can run the ai model. You can download my virtual env as I installed everything already. As for people try to build by themselves, here is the steps:
 
 ```c++
 //I use macOS Ventura 13.4
